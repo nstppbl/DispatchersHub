@@ -1,0 +1,15 @@
+{
+  "name": "dispatcher-portal",
+  "private": true,
+  "packageManager": "pnpm@9",
+  "scripts": {
+    "dev:web": "pnpm --filter @app/web dev",
+    "dev:api": "pnpm --filter @app/api start:dev",
+    "dev:worker": "pnpm --filter @app/worker dev",
+    "dev:mobile": "pnpm --filter @app/mobile start",
+    "dev:all": "concurrently -n web,api,wrk -c auto,auto,auto \"pnpm -F @app/web dev\" \"pnpm -F @app/api start:dev\" \"pnpm -F @app/worker dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

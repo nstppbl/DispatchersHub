@@ -1,0 +1,12 @@
+{
+  "name": "@app/worker",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "node src/index.js"
+  },
+  "dependencies": {
+    "ioredis": "^5.4.1",
+    "dotenv": "^16.4.5"
+  }
+}

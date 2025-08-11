@@ -1,0 +1,15 @@
+{
+  "name": "@app/mobile",
+  "private": true,
+  "version": "0.1.0",
+  "main": "App.js",
+  "scripts": {
+    "start": "expo start --tunnel"
+  },
+  "dependencies": {
+    "expo": "^51.0.0",
+    "expo-location": "~16.5.5",
+    "react": "18.3.1",
+    "react-native": "0.74.2"
+  }
+}
